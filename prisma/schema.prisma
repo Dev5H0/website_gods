@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model norse {
+  name           String  @unique(map: "sqlite_autoindex_norse_1")
+  description    String?
+  name_eng       String
+  name_is        String?
+  name_pg        String?
+  name_eng_runic String?
+  name_pg_runic  String?
+  gender         String
+  mother         String?
+  father         String?
+  siblings       String?
+  children       String?
+  lovers         String?
+}
