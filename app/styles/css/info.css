@@ -1,60 +1,10 @@
-ul {
-  list-style-type: none;
-  list-style-position: outside;
+@font-face {
+  font-family: "CustomFont1";
+  src: url("~styles/fonts/BeorcGothicSemibold.ttf") format("truetype");
 }
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-.container > .title {
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-.container > .info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border: 2px solid black;
-  padding: 1.3em;
-  margin: 0.8em;
-}
-.container > .info .relations > div {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-}
-.container > .info .names {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.container > .info .names .name {
-  text-transform: capitalize;
-}
-.container > .info .names > .title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.h1 {
-  font-size: 10vw;
-}
-
-.left {
-  float: left;
-  width: 20%;
-}
-
-.right {
-  float: right;
-  width: 20%;
+* {
+  font-family: "CustomFont1";
+  background-color: red;
 }
 
 /*# sourceMappingURL=info.css.map */
