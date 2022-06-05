@@ -7,8 +7,7 @@
     "dev": "remix dev",
     "start": "remix-serve build",
     "build:scss": "npx sass app/styles/scss/:app/styles/css/",
-    "dev:scss": "npx sass --watch app/styles/scss/:app/styles/css/",
-    "database": "prisma studio"
+    "dev:scss": "npx sass --watch app/styles/scss/:app/styles/css/"
   },
   "dependencies": {
     "@prisma/client": "^3.14.0",

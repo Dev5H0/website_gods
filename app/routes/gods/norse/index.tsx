@@ -4,13 +4,12 @@ import prisma, { IGod } from '~/lib/db.server'
 import { capitalize } from '~/lib/utils';
 
 import styling from '~/styles/css/info.css'
-export const links:LinksFunction = () => { return [{rel:'stylesheet', href:styling}] }
+const links:LinksFunction = () => { return [{rel:'stylesheet', href:styling}] }
 
 export const loader = async () => { return { data: { norse: await prisma.norse.findMany() } } }
 
 export default function() {
 	const { data } = useLoaderData()
-	if (!data) throw new Response('Not Found', { status:404 })
 
 	return (
 		<div>

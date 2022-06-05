@@ -1,73 +1,9 @@
-// @font-face {
-//     font-family: 'CustomFont1';
-//     src: url('~styles/fonts/BeorcGothicSemibold.ttf') format('truetype');
-// }
-
-// * {
-//     font-family: 'CustomFont1';
-// }
-
-
-ul {
-    list-style-type: none;
-    list-style-position: outside;
+@font-face {
+    font-family: 'CustomFont1';
+    src: url('~styles/fonts/BeorcGothicSemibold.ttf') format('truetype');
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-
-    >.title {
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
-    >.info {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        border: 2px solid black;
-        padding: 1.3em;
-        margin: 0.8em;
-
-        .relations>div {
-            display: flex;
-            flex-direction: row;
-            align-items: baseline;
-        }
-
-        .names {
-            .name {
-                text-transform: capitalize;
-            }
-            >.title {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-
-}
-
-.h1 {
-    font-size: 10vw
-}
-
-.left {
-    float: left;
-    width: 20%;
-}
-
-.right {
-    float: right;
-    width: 20%;
+* {
+    font-family: 'CustomFont1';
+    background-color: red;
 }

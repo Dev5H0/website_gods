@@ -1,12 +1,16 @@
 import { LinksFunction } from '@remix-run/node'
 import styling from '~/styles/component'
-import { Link } from "@remix-run/react"
+import { useLoaderData, Link } from "@remix-run/react"
+import prisma, { IGod } from '~/lib/db.server'
 
-export const links:LinksFunction = () => { return [styling()] }
+const links:LinksFunction = () => { return [styling()] }
 
+export const loader = async () => { return { data: { norse: await prisma.norse.findMany() } } }
 const path = '/gods/'
 
-export default function():JSX.Element {
+export default function() {
+	const { data } = useLoaderData()
+
 	return (
 		<div className='container'>
 			<h1>Gods</h1>

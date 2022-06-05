@@ -14,7 +14,6 @@ model norse {
   name_is        String?
   name_pg        String?
   name_eng_runic String?
-  name_is_runic  String?
   name_pg_runic  String?
   gender         String
   mother         String?
